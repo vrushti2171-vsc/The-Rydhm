@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Academy | The Rhythm House</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background-color: #faf5ed;
+            color: #3b2a20;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right,
+                #241811, #59402d);
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            color: #f1d5a5;
+            font-size: 43px;
+            margin: 0;
+        }
+
+        header p {
+            color: #e9d6bb;
+            letter-spacing: 3px;
+            font-size: 14px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #b7956c;
+            text-align: center;
+            padding: 17px;
+        }
+
+        nav a {
+            color: #241811;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* Academy Introduction */
+        .academy {
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .academy h2 {
+            font-size: 40px;
+        }
+
+        .academy p {
+            font-size: 18px;
+            color: #765c48;
+            line-height: 1.8;
+            max-width: 850px;
+            margin: 15px auto;
+        }
+
+        .academy img {
+            width: 85%;
+            max-width: 950px;
+            height: 340px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-top: 25px;
+            box-shadow: 0 8px 25px #00000025;
+        }
+
+        /* Courses */
+        .courses {
+            background-color: #eee1d0;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .courses h2 {
+            font-size: 35px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .card {
+            background-color: #fffaf3;
+            width: 280px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px #00000015;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card h3 {
+            font-size: 23px;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #765c48;
+            line-height: 1.6;
+        }
+
+        /* Features */
+        .features {
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .features h2 {
+            font-size: 35px;
+        }
+
+        .features p {
+            font-size: 18px;
+            line-height: 2;
+            color: #765c48;
+        }
+
+        /* Join Section */
+        .join {
+            background-color: #eee1d0;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .join h2 {
+            font-size: 34px;
+        }
+
+        .join p {
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #493224;
+            color: white;
+            padding: 14px 30px;
+            text-decoration: none;
+            border-radius: 7px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #9b764e;
+            transform: translateY(-5px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #241811;
+            color: #f1d5a5;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .academy h2 {
+                font-size: 30px;
+            }
+
+            .academy img {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🎸 The Rhythm House 🎶</h1>
+        <p>MUSIC ACADEMY</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="home.html">🏠 Home</a>
+        <a href="about.html">🎼 About</a>
+        <a href="showroom.html">🎸 Showroom</a>
+        <a href="academy.html">🎹 Academy</a>
+        <a href="contact.html">📞 Contact</a>
+    </nav>
+
+    <!-- Academy Introduction -->
+    <section class="academy">
+        <h2>Welcome to Our Music Academy 🎵</h2>
+
+        <p>
+            Discover your musical talent and
+            turn your passion into a skill.
+            At The Rhythm House Academy,
+            we help students learn, practise
+            and enjoy the beautiful world of music.
+        </p>
+
+        <img
+            src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=1200"
+            alt="Music Academy"
+        >
+    </section>
+
+    <!-- Courses -->
+    <section class="courses">
+        <h2>Our Music Courses 🎼</h2>
+        <p>Choose your favourite instrument and start learning!</p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🎸 Guitar Classes</h3>
+                <p>
+                    Learn guitar basics, chords,
+                    strumming patterns and songs.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🎹 Keyboard Classes</h3>
+                <p>
+                    Learn musical notes, scales,
+                    melodies and keyboard techniques.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🥁 Drum Classes</h3>
+                <p>
+                    Learn rhythm, beats,
+                    coordination and drumming skills.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🎤 Singing Classes</h3>
+                <p>
+                    Improve your voice, pitch,
+                    breathing and singing techniques.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🎻 Violin Classes</h3>
+                <p>
+                    Learn violin basics,
+                    bowing techniques and melodies.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🎶 Music Theory</h3>
+                <p>
+                    Understand notes, scales,
+                    rhythm and the fundamentals of music.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <h2>Why Choose Our Academy? ✨</h2>
+
+        <p>
+            🎵 Beginner-Friendly Classes<br>
+            🎸 Practical Music Learning<br>
+            🎹 Different Musical Courses<br>
+            🎼 Step-by-Step Guidance<br>
+            🎤 Creative Learning Environment
+        </p>
+    </section>
+
+    <!-- Join Academy -->
+    <section class="join">
+        <h2>Start Your Musical Journey Today!</h2>
+
+        <p>
+            Every great musician starts
+            with a single note.
+        </p>
+
+        <a href="contact.html" class="btn">
+            Join Our Academy 🎶
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 The Rhythm House | Music Academy</p>
+        <p>Made with ♡ for Music</p>
+    </footer>
+
+</body>
+</html>

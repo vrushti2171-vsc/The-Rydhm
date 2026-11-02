@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | The Rhythm House</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background-color: #faf5ed;
+            color: #3b2a20;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right,
+                #241811, #59402d);
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            color: #f1d5a5;
+            font-size: 43px;
+            margin: 0;
+        }
+
+        header p {
+            color: #e9d6bb;
+            letter-spacing: 3px;
+            font-size: 14px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #b7956c;
+            text-align: center;
+            padding: 17px;
+        }
+
+        nav a {
+            color: #241811;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* Contact Introduction */
+        .intro {
+            text-align: center;
+            padding: 50px 20px 25px;
+        }
+
+        .intro h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .intro p {
+            color: #765c48;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        /* Contact Cards */
+        .details {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 35px 20px;
+        }
+
+        .detail-card {
+            background-color: #eee1d0;
+            width: 290px;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px #00000015;
+            transition: 0.3s;
+        }
+
+        .detail-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .detail-card h3 {
+            font-size: 23px;
+        }
+
+        .detail-card p {
+            color: #765c48;
+            line-height: 1.7;
+        }
+
+        /* Contact Form */
+        .contact-section {
+            background-color: #eee1d0;
+            padding: 55px 20px;
+        }
+
+        .contact-section h2 {
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .contact-section > p {
+            text-align: center;
+            color: #765c48;
+            font-size: 17px;
+        }
+
+        form {
+            background-color: #fffaf3;
+            max-width: 600px;
+            margin: 30px auto 0;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px #00000015;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 8px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #cbb59d;
+            border-radius: 6px;
+            background-color: white;
+            font-family: Georgia, serif;
+            font-size: 16px;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #8a6746;
+        }
+
+        textarea {
+            height: 110px;
+            resize: vertical;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            background-color: #493224;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            padding: 15px;
+            margin-top: 25px;
+            font-size: 17px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #9b764e;
+            transform: translateY(-4px);
+        }
+
+        /* Closing Section */
+        .closing {
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .closing h2 {
+            font-size: 32px;
+        }
+
+        .closing p {
+            color: #765c48;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #241811;
+            color: #f1d5a5;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .intro h2 {
+                font-size: 30px;
+            }
+
+            form {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🎸 The Rhythm House 🎶</h1>
+        <p>MUSIC ACADEMY & INSTRUMENT SHOWROOM</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="home.html">🏠 Home</a>
+        <a href="about.html">🎼 About</a>
+        <a href="showroom.html">🎸 Showroom</a>
+        <a href="academy.html">🎹 Academy</a>
+        <a href="contact.html">📞 Contact</a>
+    </nav>
+
+    <!-- Contact Introduction -->
+    <section class="intro">
+        <h2>Get In Touch With Us 📞</h2>
+
+        <p>
+            Have questions about our music classes
+            or musical instruments?<br>
+            We would love to hear from you!
+        </p>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="details">
+
+        <div class="detail-card">
+            <h3>📍 Visit Us</h3>
+            <p>
+                The Rhythm House<br>
+                Ahmedabad, Gujarat, India
+            </p>
+        </div>
+
+        <div class="detail-card">
+            <h3>📞 Call Us</h3>
+            <p>
+                +91 98765 43210<br>
+                Monday - Saturday
+            </p>
+        </div>
+
+        <div class="detail-card">
+            <h3>✉️ Email Us</h3>
+            <p>
+                hello@therhythmhouse.com<br>
+                For Academy & Showroom Enquiries
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Enquiry Form -->
+    <section class="contact-section">
+
+        <h2>Send Us An Enquiry 🎵</h2>
+
+        <p>
+            Interested in music classes or
+            purchasing an instrument?
+            Fill out the form below.
+        </p>
+
+        <form onsubmit="sendMessage(event)">
+
+            <label>Full Name</label>
+            <input type="text"
+                   placeholder="Enter your full name"
+                   required>
+
+            <label>Email Address</label>
+            <input type="email"
+                   placeholder="Enter your email"
+                   required>
+
+            <label>Phone Number</label>
+            <input type="tel"
+                   placeholder="Enter your phone number"
+                   required>
+
+            <label>Enquiry Type</label>
+            <select required>
+                <option value="">Select Enquiry</option>
+                <option>Music Academy Admission</option>
+                <option>Instrument Purchase</option>
+                <option>General Enquiry</option>
+            </select>
+
+            <label>Interested In</label>
+            <select required>
+                <option value="">Select Your Interest</option>
+                <option>Guitar</option>
+                <option>Keyboard</option>
+                <option>Drums</option>
+                <option>Violin</option>
+                <option>Singing</option>
+                <option>Music Accessories</option>
+                <option>Other</option>
+            </select>
+
+            <label>Your Message</label>
+            <textarea
+                placeholder="Write your message here...">
+            </textarea>
+
+            <button type="submit">
+                Send Enquiry 🎶
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- Closing -->
+    <section class="closing">
+
+        <h2>Let's Make Music Together! 🎸</h2>
+
+        <p>
+            Whether you're beginning your musical
+            journey or searching for your next
+            favourite instrument, The Rhythm House
+            is here to help.
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 The Rhythm House | Music Academy & Instrument Showroom</p>
+        <p>Made with ♡ for Music</p>
+    </footer>
+
+    <script>
+        function sendMessage(event) {
+            event.preventDefault();
+            alert("Thank you! Your enquiry has been submitted 🎶");
+            event.target.reset();
+        }
+    </script>
+
+</body>
+</html>

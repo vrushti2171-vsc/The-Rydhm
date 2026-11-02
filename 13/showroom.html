@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Showroom | The Rhythm House</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background-color: #faf5ed;
+            color: #3b2a20;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right,
+                #241811, #59402d);
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            color: #f1d5a5;
+            font-size: 43px;
+            margin: 0;
+        }
+
+        header p {
+            color: #e9d6bb;
+            letter-spacing: 3px;
+            font-size: 14px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #b7956c;
+            text-align: center;
+            padding: 17px;
+        }
+
+        nav a {
+            color: #241811;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* Introduction */
+        .showroom {
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .showroom h2 {
+            font-size: 40px;
+        }
+
+        .showroom p {
+            font-size: 18px;
+            color: #765c48;
+            line-height: 1.8;
+            max-width: 850px;
+            margin: 15px auto;
+        }
+
+        .showroom img {
+            width: 85%;
+            max-width: 950px;
+            height: 340px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-top: 25px;
+            box-shadow: 0 8px 25px #00000025;
+        }
+
+        /* Instruments */
+        .products {
+            background-color: #eee1d0;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .products h2 {
+            font-size: 35px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .card {
+            background-color: #fffaf3;
+            width: 280px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px #00000015;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            font-size: 23px;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #765c48;
+            line-height: 1.6;
+        }
+
+        .price {
+            color: #59402d;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            background-color: #493224;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 7px;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #9b764e;
+            transform: translateY(-5px);
+        }
+
+        /* Visit Section */
+        .visit {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .visit h2 {
+            font-size: 35px;
+        }
+
+        .visit p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #765c48;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #241811;
+            color: #f1d5a5;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .showroom h2 {
+                font-size: 30px;
+            }
+
+            .showroom img {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🎸 The Rhythm House 🎶</h1>
+        <p>MUSICAL INSTRUMENT SHOWROOM</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="home.html">🏠 Home</a>
+        <a href="about.html">🎼 About</a>
+        <a href="showroom.html">🎸 Showroom</a>
+        <a href="academy.html">🎹 Academy</a>
+        <a href="contact.html">📞 Contact</a>
+    </nav>
+
+    <!-- Showroom Introduction -->
+    <section class="showroom">
+
+        <h2>Explore Our Instrument Showroom 🎵</h2>
+
+        <p>
+            Welcome to The Rhythm House Showroom!
+            Discover a beautiful collection of
+            musical instruments for beginners,
+            students and music enthusiasts.
+        </p>
+
+        <img
+            src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=1200"
+            alt="Musical Instruments"
+        >
+
+    </section>
+
+    <!-- Instruments -->
+    <section class="products">
+
+        <h2>Our Instrument Collection 🎶</h2>
+        <p>Find your perfect musical companion!</p>
+
+        <div class="cards">
+
+            <!-- Guitar -->
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=600"
+                    alt="Guitar"
+                >
+
+                <h3>🎸 Acoustic Guitar</h3>
+
+                <p>
+                    Beautiful acoustic guitars
+                    for beginners and professionals.
+                </p>
+
+                <div class="price">₹4,999</div>
+
+                <a href="contact.html" class="btn">
+                    Enquire Now
+                </a>
+            </div>
+
+            <!-- Keyboard -->
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=600"
+                    alt="Keyboard"
+                >
+
+                <h3>🎹 Keyboard</h3>
+
+                <p>
+                    Explore digital keyboards
+                    for playing beautiful melodies.
+                </p>
+
+                <div class="price">₹6,999</div>
+
+                <a href="contact.html" class="btn">
+                    Enquire Now
+                </a>
+            </div>
+
+            <!-- Drums -->
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?w=600"
+                    alt="Drums"
+                >
+
+                <h3>🥁 Drum Set</h3>
+
+                <p>
+                    Discover drum sets for
+                    powerful beats and rhythms.
+                </p>
+
+                <div class="price">₹14,999</div>
+
+                <a href="contact.html" class="btn">
+                    Enquire Now
+                </a>
+            </div>
+
+            <!-- Violin -->
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1465821185615-20b3c2fbf41b?w=600"
+                    alt="Violin"
+                >
+
+                <h3>🎻 Violin</h3>
+
+                <p>
+                    Explore violins for
+                    classical music lovers.
+                </p>
+
+                <div class="price">₹3,999</div>
+
+                <a href="contact.html" class="btn">
+                    Enquire Now
+                </a>
+            </div>
+
+            <!-- Microphone -->
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=600"
+                    alt="Microphone"
+                >
+
+                <h3>🎤 Microphone</h3>
+
+                <p>
+                    Quality microphones
+                    for singing and recording.
+                </p>
+
+                <div class="price">₹2,499</div>
+
+                <a href="contact.html" class="btn">
+                    Enquire Now
+                </a>
+            </div>
+
+            <!-- Accessories -->
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=600"
+                    alt="Guitar Accessories"
+                >
+
+                <h3>🎼 Accessories</h3>
+
+                <p>
+                    Guitar picks, strings,
+                    tuners and other music essentials.
+                </p>
+
+                <div class="price">From ₹199</div>
+
+                <a href="contact.html" class="btn">
+                    Enquire Now
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Visit Showroom -->
+    <section class="visit">
+
+        <h2>Visit Our Showroom ✨</h2>
+
+        <p>
+            Explore our musical instruments,
+            find your favourite sound and
+            begin your musical journey today!
+        </p>
+
+        <a href="contact.html" class="btn">
+            Contact Our Showroom 🎸
+        </a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 The Rhythm House | Musical Instrument Showroom</p>
+        <p>Made with ♡ for Music</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | The Rhythm House</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background-color: #faf5ed;
+            color: #3b2a20;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right,
+                #241811, #59402d);
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            color: #f1d5a5;
+            font-size: 43px;
+            margin: 0;
+        }
+
+        header p {
+            color: #e9d6bb;
+            letter-spacing: 3px;
+            font-size: 14px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #b7956c;
+            text-align: center;
+            padding: 17px;
+        }
+
+        nav a {
+            color: #241811;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* About Section */
+        .about {
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .about h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 18px;
+            line-height: 1.9;
+            max-width: 850px;
+            margin: 0 auto 25px;
+            color: #765c48;
+        }
+
+        .about img {
+            width: 85%;
+            max-width: 900px;
+            height: 340px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px #00000025;
+        }
+
+        /* Services */
+        .services {
+            background-color: #eee1d0;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .services h2 {
+            font-size: 35px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .card {
+            background-color: #fffaf3;
+            width: 300px;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px #00000015;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card h3 {
+            font-size: 24px;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #765c48;
+            line-height: 1.7;
+        }
+
+        /* Mission */
+        .mission {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .mission h2 {
+            font-size: 35px;
+        }
+
+        .mission p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #765c48;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #241811;
+            color: #f1d5a5;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .about h2 {
+                font-size: 32px;
+            }
+
+            .about img {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🎸 The Rhythm House 🎶</h1>
+        <p>MUSIC ACADEMY & INSTRUMENT SHOWROOM</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="home.html">🏠 Home</a>
+        <a href="about.html">🎼 About</a>
+        <a href="showroom.html">🎸 Showroom</a>
+        <a href="academy.html">🎹 Academy</a>
+        <a href="contact.html">📞 Contact</a>
+    </nav>
+
+    <!-- About -->
+    <section class="about">
+
+        <h2>About The Rhythm House</h2>
+
+        <p>
+            Welcome to The Rhythm House, where
+            passion meets music!
+            We are a music academy and musical
+            instrument showroom dedicated to
+            inspiring musicians of all levels.
+        </p>
+
+        <p>
+            Whether you want to learn your first
+            musical instrument or explore a wide
+            collection of guitars, keyboards,
+            drums and more, The Rhythm House
+            brings everything together under one roof.
+        </p>
+
+        <img
+            src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=1200"
+            alt="Musical Instruments"
+        >
+
+    </section>
+
+    <!-- What We Offer -->
+    <section class="services">
+
+        <h2>What We Offer 🎵</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🎹 Music Academy</h3>
+                <p>
+                    Learn guitar, keyboard,
+                    drums and other instruments
+                    through engaging music lessons
+                    designed for beginners and
+                    growing musicians.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🎸 Instrument Showroom</h3>
+                <p>
+                    Explore a collection of
+                    acoustic guitars, electric
+                    guitars, keyboards, drums
+                    and musical accessories.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🎼 Musical Guidance</h3>
+                <p>
+                    Discover the right instrument,
+                    develop your musical skills
+                    and enjoy your journey
+                    into the world of music.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Mission -->
+    <section class="mission">
+
+        <h2>Our Mission ✨</h2>
+
+        <p>
+            Our mission is to make music accessible,
+            enjoyable and inspiring for everyone.
+            We believe that every musician deserves
+            the opportunity to learn, create and
+            express themselves through music.
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 The Rhythm House | Music Academy & Instrument Showroom</p>
+        <p>Made with ♡ for Music</p>
+    </footer>
+
+</body>
+</html>

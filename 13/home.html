@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Rhythm House | Home</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background-color: #faf5ed;
+            color: #3b2a20;
+        }
+        header {
+            background: linear-gradient(to right,
+                #241811, #59402d);
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            color: #f1d5a5;
+            font-size: 43px;
+            margin: 0;
+        }
+
+        header p {
+            color: #e9d6bb;
+            letter-spacing: 3px;
+            font-size: 14px;
+        }
+
+      
+        nav {
+            background-color: #b7956c;
+            text-align: center;
+            padding: 17px;
+        }
+
+        nav a {
+            color: #241811;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+      
+        .home {
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .home h2 {
+            font-size: 42px;
+            margin: 0 0 15px;
+        }
+
+        .home p {
+            font-size: 19px;
+            line-height: 1.7;
+            color: #765c48;
+        }
+
+        .home img {
+            width: 85%;
+            max-width: 950px;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-top: 30px;
+            box-shadow: 0 8px 25px #00000025;
+        }
+
+        
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 35px;
+            background-color: #493224;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #9b764e;
+            transform: translateY(-5px);
+        }
+
+       
+        .collection {
+            background-color: #eee1d0;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .collection h2 {
+            font-size: 34px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: #fffaf3;
+            width: 280px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px #00000015;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            font-size: 23px;
+        }
+
+        .card p {
+            color: #765c48;
+            line-height: 1.5;
+        }
+
+        
+        .academy {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .academy h2 {
+            font-size: 35px;
+        }
+
+        .academy p {
+            font-size: 18px;
+            color: #765c48;
+            line-height: 1.7;
+        }
+
+        
+        footer {
+            background-color: #241811;
+            color: #f1d5a5;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .home h2 {
+                font-size: 32px;
+            }
+
+            .home img {
+                height: 230px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🎸 The Rhythm House 🎶</h1>
+        <p>MUSIC SHOP & ACADEMY</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="home.html">🏠 Home</a>
+        <a href="about.html">🎼 About</a>
+        <a href="showroom.html">🎸 Showroom</a>
+        <a href="academy.html">🎹 Academy</a>
+        <a href="contact.html">📞 Contact</a>
+    </nav>
+
+    <!-- Home -->
+    <section class="home">
+
+        <h2>Where Music Comes Alive</h2>
+
+        <p>
+            Welcome to The Rhythm House!<br>
+            Discover the beauty of music,
+            explore musical instruments,
+            and begin your musical journey with us.
+        </p>
+
+        <img
+            src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=1200&q=85"
+            alt="Acoustic Guitar"
+        >
+
+        <br>
+
+        <a href="shop.html" class="btn">
+            Explore Our Shop 🎸
+        </a>
+
+    </section>
+
+    <!-- Collection -->
+    <section class="collection">
+
+        <h2>Explore Our Musical World</h2>
+        <p>Find everything you need to make music.</p>
+
+        <div class="cards">
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=600"
+                    alt="Guitar"
+                >
+                <h3>🎸 Guitars</h3>
+                <p>
+                    Discover acoustic and electric
+                    guitars for every music lover.
+                </p>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=600"
+                    alt="Piano"
+                >
+                <h3>🎹 Keyboards</h3>
+                <p>
+                    Explore beautiful keyboards
+                    and pianos for your melodies.
+                </p>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=600"
+                    alt="Music"
+                >
+                <h3>🎼 Music Academy</h3>
+                <p>
+                    Learn music and develop your
+                    skills with our academy.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Academy -->
+    <section class="academy">
+
+        <h2>Learn • Play • Inspire</h2>
+
+        <p>
+            Music is more than just sound.
+            It is passion, creativity, and expression.
+            <br>
+            Start your musical journey at
+            The Rhythm House Academy.
+        </p>
+
+        <a href="academy.html" class="btn">
+            Explore Our Academy 🎶
+        </a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 The Rhythm House | Music Shop & Academy</p>
+        <p>Made with ♡ for Music</p>
+    </footer>
+
+</body>
+</html>
